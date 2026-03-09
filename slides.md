@@ -139,7 +139,7 @@ class: -mt-12
 2. Initial accuracy benchmarks
    1. BLIS vs. Vidur, InferSym, Dynamo AI Configurator, BentoML LLM Optimizer
    2. Crossmodel & true roofline focus
-   3. Best-paper quality plots & captions
+   3. Best-paper quality plots & captions ([link](https://ibm.box.com/s/d2yar990o105rt2kxvtnta83gf900my4))
 3. Train/test/validation datasets for next benchmark round
 6. Design Use Cases in the Paper
    1. Routing algo discovery - BLIS & competitors
