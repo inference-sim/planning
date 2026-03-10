@@ -108,7 +108,15 @@ A single **llm-d-planner** core repo that delivers:
 
 ## Goals (next week)
 
-TBD
+1. Agreement with Yang Li on high-level goals (PD-disagg support + inference estimator/profiler)
+   - BLIS workstream must support PD
+2. Present llm-d-planner proposal to sig-benchmarking
+3. Present llm-d-planner proposal to main llm-d community meeting
+4. Once approved → llm-d leadership to help create new repo
+   - Should it be in llm-d-incubating org?
+5. Start pushing ConfigExplorer + NeuralNav to new repo
+6. Start phasing ConfigExplorer out of llm-d-benchmark repo
+7. Discuss BLIS accuracy blog (next two weeks)
 
 ---
 layout: two-cols-header
