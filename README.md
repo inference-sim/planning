@@ -1,15 +1,13 @@
 # AI Native Systems & LLM-D — Planning Slides
 
-## Setup
+## Prerequisites
 
-```bash
-npm install
-```
+[Node.js](https://nodejs.org/) (includes `npx`)
 
 ## Viewing the slides
 
 ```bash
-npm run dev
+npx slidev slides.md
 ```
 
 This opens the presentation at `http://localhost:3030`.
@@ -17,5 +15,5 @@ This opens the presentation at `http://localhost:3030`.
 ## Exporting to PDF
 
 ```bash
-npm run export
+npx slidev export slides.md
 ```
