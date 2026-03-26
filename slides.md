@@ -108,15 +108,13 @@ A single **llm-d-planner** core repo that delivers:
 
 ## Goals (next week)
 
-1. Agreement with Yang Li on high-level goals (PD-disagg support + inference estimator/profiler)
-   - BLIS workstream must support PD
-2. Present llm-d-planner proposal to sig-benchmarking
-3. Present llm-d-planner proposal to main llm-d community meeting
-4. Once approved → llm-d leadership to help create new repo
-   - Should it be in llm-d-incubating org?
-5. Start pushing ConfigExplorer + NeuralNav to new repo
-6. Start phasing ConfigExplorer out of llm-d-benchmark repo
-7. Discuss BLIS accuracy blog (next two weeks)
+1. Get config planner proposal merged (Carlos)
+2. Initial incubation repo with the two capabilities
+
+
+## Status
+
+1. Joint IBM/RH proposal on llm-d-planner
 
 ---
 layout: two-cols-header
@@ -143,18 +141,17 @@ class: -mt-12
 
 ## Goals (next week)
 
-1. Paper outline & related work section incl. Phantora (NSDI '26)
+1. BLIS Design section
 2. Initial accuracy benchmarks
-   1. BLIS vs. Vidur, InferSym, Dynamo AI Configurator, BentoML LLM Optimizer
-   2. Crossmodel & true roofline focus
-   3. Best-paper quality plots & captions ([link](https://ibm.box.com/s/d2yar990o105rt2kxvtnta83gf900my4))
-3. Train/test/validation datasets for next benchmark round
-6. Design Use Cases in the Paper
-   1. Routing algo discovery - BLIS & competitors
-     a) Initial section in the paper on Routing improvements with BLIS
-     b) Initial Sim2Real validation section in the paper
-   2. Admission control algo discovery - BLIS & competitors
-   3. Config explorer/search - BLIS & competitors
+   1. Paper section that provides justification for accuracy experiments
+   2. Best-paper quality plots & captions ([link](https://ibm.box.com/s/d2yar990o105rt2kxvtnta83gf900my4))
+3. Train/validation datasets & pipeline
+4. Sim-to-real transfer of routing algos
+
+## Status
+
+1. Paper outline & related work section incl. Phantora (NSDI '26)
+
 
 </div>
 
@@ -172,13 +169,17 @@ layoutClass: gap-16
 1. Zero-friction user docs (incl. gated model docs)
 2. Documented examples complete in seconds
 3. Blog series
+   1. Initial accuracy comparison
 
 ::right::
 
 ## Goals (next week)
 
-1. Zero-friction user docs (incl. gated model docs)
-2. Documented examples complete in seconds
+1. Initial discussion with Yang Li @ Google
+
+## Status
+
+1. User-friendly docs + initial blog article
 
 ---
 layout: two-cols-header
@@ -191,6 +192,7 @@ layoutClass: gap-16
 
 ## Goals (ICSE July 18)
 
+0. Nous: Agentic Systems Experimentation & Discovery
 1. Best paper award worthy submission
 2. ArXiv submission for 2026
 
@@ -267,13 +269,56 @@ layoutClass: gap-16
 ## Goals (2 weeks)
 
 1. Automation for contributors
+2. Should we build on spec-kit?
 
 ::right::
 
 ## Goals (next week)
 
-1. Local automation responsive to @claude and / comments on git
-   1. issue/sub-issue → code PR/draft-design-PR
-   2. draft-design-PR → code PR
-   3. PR → review
-   4. Explore locally hosted GitHub runner
+1. Self-hosted runner on RIS3
+
+## Status
+
+1. Self-hosted GitHub runner on users' laptop
+
+---
+layout: two-cols-header
+layoutClass: gap-16
+class: -mt-16
+---
+
+# Training pipeline
+
+::left::
+
+## Goals (2 weeks)
+
+<div class="text-sm">
+
+1. Automation for contributors
+2. Should we build on spec-kit?
+
+</div>
+
+::right::
+
+## Goals (next week)
+
+<div class="text-sm">
+
+1. Basis functions
+2. BLIS observe cmd for data collection
+3. Data collection
+    1. Models
+    2. GPU
+    3. Workloads
+    4. Quantization/TP/DP/vLLM args
+4. Pipeline
+    1. Linear regression fit of coefficients
+        - Objective: Prefill & decode times
+        - Objective: Pre-queueing & post-decode CPU overheads
+    2. Blackbox fit starting with LR coeffs
+        - Objective: TTFT & E2E
+
+</div>
+
