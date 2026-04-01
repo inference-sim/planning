@@ -82,6 +82,11 @@ layout: default
   <div class="text-sm opacity-75 mt-1"><strong>Michael</strong>, Jing, team</div>
 </div>
 
+<div class="p-4 rounded-lg bg-teal-500 bg-opacity-10 border border-teal-500 border-opacity-30">
+  <div class="text-lg font-bold text-teal-400">8. Make LLM-D Shine</div>
+</div>
+
+
 </div>
 
 ---
